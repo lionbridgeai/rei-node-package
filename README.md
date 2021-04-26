@@ -15,3 +15,11 @@ Let's publish some packages
     }
   }
   ```
+
+
+## install packages
+1. login to github packages or corresponding entries in your `.npmrc` file
+1. `.npmrc` should include line(s) specifying github package URL(s) like:
+  ```sh
+  @lionbridgeai:registry=https://npm.pkg.github.com
+  ```

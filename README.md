@@ -15,6 +15,11 @@ Let's publish some packages
       }
     }
     ```
+1. publish your package (CI -- GH Actions or Jenkins should handle publishing :), but you can test as follows)
+    ```sh
+    npm version major # or update your package.json manually
+    npm publish # that's it
+    ```
 
 
 ## install packages

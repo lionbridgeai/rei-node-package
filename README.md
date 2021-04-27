@@ -23,25 +23,20 @@ rei();
 
 ## Publishing/Testing from local
 1. create a personal github token with following permissions: `repo`, `write:packages`
-1. npm login --scope=@lionbridgeai --registry=https://npm.pkg.github.com 
-1. create a new repo for your package `<package-name>`. It is recommended to have same name for repo and package. Your package should have `package.json` file with following minimum attr
-    ```json
-    {
-      "name": "@lionbridgeai/<package-name>",
-      "version": "<version>",
-      "repository": "https://github.com/lionbridgeai/<repo-name>",
-      "main": "<package-entrypoint>",
-      "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
-      }
-    }
+1. Do `npm login` using your github username as username and personal access token as password.
+    ```bash
+    npm login --scope=@lionbridgeai --registry=https://npm.pkg.github.com 
     ```
-1. publish your package (CI -- GH Actions should handle publishing :), but you can test as follows)
+1. create a new repo for your package `<package-name>`. It is recommended to have same name for repo and package. Copy over all the files from here to your repo and edit files as necessary. You should, at least, update your `package.json` file with your package's info
+1. publish your package (CI -- GH Actions should handle publishing, but you can test as follow)
     ```sh
-    npm version major # or update your package.json manually
-    npm publish # that's it
+    # run tests -- we are using jest
+    npm test
+    # update major, minor or patch version
+    npm version major
+    # publish it -- should automatically be done using GH action once you push to master
+    npm publish
     ```
-
 
 ## Installing Packages
 1. login to github packages or add corresponding entries in your `.npmrc` file

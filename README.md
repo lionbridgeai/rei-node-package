@@ -2,7 +2,7 @@
 
 [![build Actions Status](https://github.com/lionbridgeai/rei-node-package/actions/workflows/build.yml/badge.svg)](https://github.com/lionbridgeai/rei-node-package/actions)  [![publish Actions Status](https://github.com/lionbridgeai/rei-node-package/actions/workflows/publish.yml/badge.svg)](https://github.com/lionbridgeai/rei-node-package/actions)
 
-This is an rei (example) package. It is to demonstrate how to publish and use github npm packages but these techniques can be used for other package registry with some changes.
+This is rei (example) package. It is to demonstrate how to use and publish to github npm packages but these techniques can be used for other package registries with some changes.
 
 ## Install
 
@@ -25,8 +25,9 @@ rei();
 1. Create a personal github token with following permissions: `repo`, `write:packages`
 1. Do `npm login` using your github username as username and personal access token as password.
     ```bash
-    npm login --scope=@lionbridgeai --registry=https://npm.pkg.github.com 
+    npm login --scope=@<SCOPE> --registry=https://npm.pkg.github.com 
     ```
+    where `SCOPE` would be your github org name or username.
 1. Create a new repo for your package `<package-name>`. It is recommended to have same name for repo and package. Make your repo private if you want to keep your package private.
 1. Copy over all the files from here to your repo and edit files as necessary. You should, at least, update your `package.json` file with your package's info
 1. publish your package (CI -- GH Actions should handle publishing, but you can test as follow)

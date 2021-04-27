@@ -45,3 +45,16 @@ rei();
     @lionbridgeai:registry=https://npm.pkg.github.com
     ```
 1. npm install @lionbridgeai/rei-node-package # or your package.json file
+
+## Some References
+### nvm (node version manager)
+You can use [nvm](https://github.com/nvm-sh/nvm) to install and manage multiple versions of node and npm. Install `nvm` using instruction from their github repo. Afterwards, installing and managing node and npm is as easy as this
+```sh
+nvm install 16.0.0  # Install a specific version number
+nvm use 16.0        # Use the latest available 8.0.x release
+nvm install node    # Install the latest available version
+nvm use node        # Use the latest version
+```
+
+### Testing Framework - Jest
+[jest](https://jestjs.io/) testing framework is used for this rei (example) package. And, we encourage you to use the same for your packages and libraries.

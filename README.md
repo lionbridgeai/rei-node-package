@@ -16,7 +16,7 @@ $ npm install @lionbridgeai/rei-node-package
 const rei = require("@lionbridgeai/rei-node-package");
 
 rei();
-//=> "You have succesfull installed and run lionbridgeai's rei package"
+//=> "You have succesfull installed and ran lionbridgeai's rei package"
 ```
 
 # Publishing your own node(npm) packages

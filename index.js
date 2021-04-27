@@ -1,3 +1,3 @@
 module.exports = function rei() {
-  return "You have succesfull installed and run lionbridgeai's rei package";
+  return "You have succesfull installed and ran lionbridgeai's rei package";
 };

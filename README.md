@@ -1,6 +1,6 @@
 # @lionbridgeai/rei-node-package
 
-[![build Actions Status](https://github.com/lionbridgeai/rei-node-package/actions/workflows/publish.yml/badge.svg)](https://github.com/lionbridgeai/rei-node-package/actions)
+[![build Actions Status](https://github.com/lionbridgeai/rei-node-package/actions/workflows/build.yml/badge.svg)](https://github.com/lionbridgeai/rei-node-package/actions)  [![publish Actions Status](https://github.com/lionbridgeai/rei-node-package/actions/workflows/publish.yml/badge.svg)](https://github.com/lionbridgeai/rei-node-package/actions)
 
 This is an rei (example) package. It is to demonstrate how to publish and use github npm packages but these techniques can be used for other package registry with some changes.
 
